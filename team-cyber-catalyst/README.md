@@ -1,4 +1,7 @@
 # Cyber Catalyst - Enterprise Cybersecurity Website
+
+![Cyber Catalyst](https://i.imgur.com/placeholder.png)
+
 ## 🚀 About
 
 Cyber Catalyst is an enterprise-grade cybersecurity website built for a hackathon. The project showcases a modern, responsive design with advanced features including AI-powered chatbot integration, real-time cybersecurity news, interactive blog, and comprehensive resource center.

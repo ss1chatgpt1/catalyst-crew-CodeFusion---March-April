@@ -1,0 +1,158 @@
+.footer {
+  background-color: var(--darker-bg);
+  position: relative;
+}
+
+.footer-top {
+  padding: 80px 0 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-logo a {
+  display: flex;
+  align-items: center;
+  color: var(--light-text);
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.footer-widget h3 {
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+}
+
+.footer-widget h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.footer-widget p {
+  margin-bottom: 25px;
+  color: var(--gray-text);
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social a {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 102, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+.footer-social a:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-5px);
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 15px;
+}
+
+.footer-links li a {
+  color: var(--gray-text);
+  transition: var(--transition);
+  display: inline-block;
+  position: relative;
+  padding-left: 15px;
+}
+
+.footer-links li a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  transition: var(--transition);
+}
+
+.footer-links li a:hover {
+  color: var(--primary-color);
+  transform: translateX(5px);
+}
+
+.footer-links li a:hover::before {
+  background-color: var(--secondary-color);
+}
+
+.footer-subscribe {
+  position: relative;
+  margin-top: 20px;
+}
+
+.footer-subscribe input {
+  width: 100%;
+  padding: 15px;
+  padding-right: 50px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  color: var(--light-text);
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.footer-subscribe input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  background-color: rgba(0, 102, 255, 0.05);
+}
+
+.footer-subscribe button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.footer-subscribe button:hover {
+  background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+}
+
+.footer-bottom {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.copyright p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 992px) {
+  .footer-content {
+    gap: 40px;
+  }
+}

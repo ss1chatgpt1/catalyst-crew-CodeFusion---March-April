@@ -1,0 +1,114 @@
+.features {
+  background-color: var(--dark-bg);
+  position: relative;
+}
+
+.features-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.tabs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--darker-bg);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: var(--transition);
+  border-left: 3px solid transparent;
+}
+
+.tab.active, .tab:hover {
+  border-left: 3px solid var(--primary-color);
+  background: linear-gradient(to right, rgba(0, 102, 255, 0.05), transparent);
+}
+
+.tab-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 102, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  transition: var(--transition);
+}
+
+.tab.active .tab-icon, .tab:hover .tab-icon {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+.tab-icon i {
+  font-size: 20px;
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+.tab.active .tab-icon i, .tab:hover .tab-icon i {
+  color: white;
+}
+
+.tab-content h3 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  transition: var(--transition);
+}
+
+.tab.active .tab-content h3, .tab:hover .tab-content h3 {
+  color: var(--primary-color);
+}
+
+.tab-content p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.feature-detail {
+  display: none;
+  padding: 30px;
+  background-color: var(--darker-bg);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-detail.active {
+  display: block;
+}
+
+.feature-detail h3 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.feature-list {
+  list-style: none;
+  margin: 30px 0;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.feature-list li i {
+  color: var(--primary-color);
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+@media (max-width: 992px) {
+  .features-content {
+    grid-template-columns: 1fr;
+  }
+}
